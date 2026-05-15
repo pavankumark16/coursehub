@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/logo.png" />
+    <title>CourseHub</title>
+    <style>
+      .mc {
+        margin: 0% 4%;
+        background-color: rgba(83, 88, 94, 0.147);
+      }
+    </style>
+    <link rel="stylesheet" href="../cssFiles/style2.css" />
+  </head>
+
+  <body id="body">
+    <header class="header">
+      <div class="logo">
+        <img src="../htmlFiles/images/logo.png" alt="courselogo" />
+      </div>
+      <div class="column">
+        <h1>CourseHub</h1>
+        <h4>Enhance Skills</h4>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#course">Courses</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="spanclass">
+          <span id="light">🌞</span> /// <span id="dark">🌙</span>
+        </div>
+      </nav>
+    </header>
+    <div class="mc" id="maincont">
+      <section class="home">
+        <p id="home">
+          Welcome to our online learning platform. This space is designed to
+          support your learning journey in a simple, comfortable, and flexible
+          way. Here, you can explore carefully structured courses that help you
+          build skills step by step, at your own pace. Whether you are just
+          beginning or looking to improve your existing knowledge, our platform
+          aims to make learning clear, practical, and accessible for everyone.
+          We are happy to be a part of your growth and learning experience.
+        </p>
+        <img
+          class="homepic"
+          style="height: 250px; width: 300px"
+          src="../htmlFiles/images/homeimg.png"
+        />
+      </section>
+
+      <section class="course" id="course">
+        <img
+          src="../htmlFiles/images/coursepic.jpg"
+          height="260px"
+          width="280px"
+        />
+        <span>
+          Learn Anytime<br />
+          Our platform helps you learn at your own pace with clear and
+          structured courses. you only need internet.
+        </span>
+        <img
+          src="../htmlFiles/images/coursepic2.jpg"
+          height="260px"
+          width="280px"
+        />
+        <span
+          ><mark>Learn Anytime</mark><br />
+          Learning should fit naturally into your daily routine. Our platform
+          <mark>allows you to access courses anytime,</mark> so you can study at
+          your own pace without pressure. Each lesson is designed to be
+          <mark>clear and well-structured,</mark>helping you understand concepts
+          step by step. This
+          <mark
+            >flexible approach makes learning comfortable, consistent, and easy
+            to continue.</mark
+          >
+        </span>
+      </section>
+
+      <section class="courses">
+        <!-- CARD 1 -->
+        <div class="card">
+          <img src="../htmlFiles/images/python.jpg" alt="Python Course" />
+          <div class="card-content">
+            <h3>Python Programming</h3>
+            <p>Learn Python from basics to advanced.</p>
+          </div>
+          <div class="card-btns">
+            <button class="btn view-details" data-course="python">
+              Concepts
+            </button>
+            <button class="cb" data-course="python">Enroll</button>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+          <img src="../htmlFiles/images/html,css.png" alt="Web Dev" />
+          <div class="card-content">
+            <h3>Web Development</h3>
+            <p>HTML, CSS & projects.</p>
+          </div>
+          <div class="card-btns">
+            <button class="btn view-details" data-course="web">Concepts</button>
+
+            <button class="cb" data-course="web">Enroll</button>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+          <img src="..//htmlFiles/images/ml.png" alt="Machine Learning" />
+          <div class="card-content">
+            <h3>Machine Learning</h3>
+            <p>Build intelligent ML models.</p>
+          </div>
+          <div class="card-btns">
+            <button class="btn view-details" data-course="ml">Concepts</button>
+
+            <button class="cb" data-course="ml">Enroll</button>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card">
+          <img src="../htmlFiles/images/ds.jpg" alt="Data Science" />
+          <div class="card-content">
+            <h3>Data Science</h3>
+            <p>Data analysis & visualization.</p>
+          </div>
+          <div class="card-btns">
+            <button class="btn view-details" data-course="ds">Concepts</button>
+            <button class="cb" data-course="ds">Enroll</button>
+          </div>
+        </div>
+        <!-- CARD 5 -->
+        <div class="card">
+          <img src="./images/ai.jpg" alt="Data Science" />
+          <div class="card-content">
+            <h3>Artifical intelligent</h3>
+            <p>Learn AI concepts, algorithms, and applications.</p>
+          </div>
+          <div class="card-btns">
+            <button class="btn view-details" data-course="ai">Concepts</button>
+            <button class="cb" data-course="ai">Enroll</button>
+          </div>
+        </div>
+        <!-- CARD 6 -->
+        <div class="card">
+          <img src="./images/java.png" alt="Data Science" />
+          <div class="card-content">
+            <h3>Java</h3>
+            <p>Object-oriented programming using Java.</p>
+          </div>
+          <div class="card-btns">
+            <button class="btn view-details" data-course="java">
+              Concepts
+            </button>
+            <button class="cb" data-course="java">Enroll</button>
+          </div>
+        </div>
+        <!-- CARD 7 -->
+        <div class="card">
+          <img src="./images/mysql.png" alt="Data Science" />
+          <div class="card-content">
+            <h3>My SQL</h3>
+            <p>Learn database design and SQL queries.</p>
+          </div>
+          <div class="card-btns">
+            <button class="btn view-details" data-course="mysql">
+              Concepts
+            </button>
+            <button class="cb" data-course="mysql">Enroll</button>
+          </div>
+        </div>
+
+        <!-- CARD 8-->
+        <div class="card">
+          <img src="./images/js.png" alt="Data Science" />
+          <div class="card-content">
+            <h3>JAVA SCRIPT</h3>
+            <p>Master JavaScript for dynamic web applications.</p>
+          </div>
+          <div class="card-btns">
+            <button class="btn view-details" data-course="js">Concepts</button>
+            <button class="cb" data-course="js">Enroll</button>
+          </div>
+        </div>
+
+        <!-- CARD 9 -->
+        <div class="card">
+          <img src="./images/fs.jpg" alt="Data Science" />
+          <div class="card-content">
+            <h3>FULL STACK</h3>
+            <p>Front-end and back-end development training.</p>
+          </div>
+          <div class="card-btns">
+            <button class="btn view-details" data-course="fullstack">
+              Concepts
+            </button>
+            <button class="cb" data-course="fullstack">Enroll</button>
+          </div>
+        </div>
+
+        <!-- CARD 10-->
+        <div class="card">
+          <img src="./images/react.png" alt="Data Science" />
+          <div class="card-content">
+            <h3>REACT JS</h3>
+            <p>Build modern UI using React framework.</p>
+          </div>
+          <div class="card-btns">
+            <button class="btn view-details" data-course="react">
+              Concepts
+            </button>
+            <button class="cb" data-course="react">Enroll</button>
+          </div>
+        </div>
+        <!-- CARD 11-->
+        <div class="card">
+          <img src="./images/node.png" alt="Data Science" />
+          <div class="card-content">
+            <h3>NODE JS</h3>
+            <p>Server-side development with Node.js.</p>
+          </div>
+          <div class="card-btns">
+            <button class="btn view-details" data-course="node">
+              Concepts
+            </button>
+            <button class="cb" data-course="node">Enroll</button>
+          </div>
+        </div>
+        <!-- CARD 12-->
+        <div class="card">
+          <img src="./images/bck.png" alt="Data Science" />
+          <div class="card-content">
+            <h3>BACK-END Course</h3>
+            <p>APIs, databases, and server-side logic.</p>
+          </div>
+          <div class="card-btns">
+            <button class="btn view-details" data-course="backend">
+              Concepts
+            </button>
+            <button class="cb" data-course="backend">Enroll</button>
+          </div>
+        </div>
+
+        <div id="detailsPopup" class="popup">
+          <div class="popup-content">
+            <span class="close">&times;</span>
+
+            <h2 id="pTitle"></h2>
+            <p><strong>Duration:</strong> <span id="pDuration"></span></p>
+
+            <p><strong>Roadmap:</strong></p>
+            <ul id="pRoadmap"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="aboutt" id="about">
+          <h3>About</h3>
+          <p>
+            >> This is an online learning platform designed to help users
+            enhance their technical and professional skills.<br />
+
+            >> It provides a structured and organized collection of courses
+            across multiple domains.<br />
+
+            >> The platform focuses on beginner-friendly content with clear
+            explanations.<br />
+
+            >> Users can explore courses based on their interests and career
+            goals.<br />
+
+            >> Each course includes a defined learning roadmap for better
+            understanding.<br />
+
+            >> The system supports self-paced learning without time pressure.<br />
+
+            >> Practical knowledge is emphasized along with conceptual
+            clarity.<br />
+
+            >> The interface is designed to be simple, responsive, and
+            user-friendly.<br />
+
+            >> Learners can view course details such as duration and learning
+            outcomes.<br />
+
+            >> The project encourages continuous learning and skill
+            improvement.<br />
+
+            >> It helps users gain job-oriented and industry-relevant
+            knowledge.<br />
+
+            >> The platform aims to make quality education accessible to
+            everyone.<br />
+            >> Our platform is designed to make learning simple, structured, and
+            accessible for everyone.<br />
+            >> We focus on practical knowledge that helps learners grow step by
+            step with confidence.<br />
+            >> Each course is created to support flexible, self-paced learning
+            in a calm environment.<br />
+            >> Our goal is to guide learners toward meaningful skills and steady
+            progress.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <section class="contact" id="contact">
+      <div class="sec">
+        <h2>Contact Us</h2>
+        <p>Have questions? We’d love to hear from you.</p>
+
+        <div class="contact-info">
+          <p>Email: support@yourwebsite.com</p>
+          <p>Phone: +91 8222312221</p>
+          <p>
+            Location: Visakhapatnam, Anakapalli, Andhra Pradesh, 531033 - India
+          </p>
+        </div>
+        <div class="c1">
+          <br />
+          <div class="cc1">
+            <mark
+              style="
+                background-color: antiquewhite;
+                border-radius: 1em;
+                font-size: 19px;
+                padding: 2px;
+              "
+              >Courses Provide </mark
+            >:>
+          </div>
+          <div class="cc2">
+            <marquee onmouseover="this.stop()" onmouseout="this.start()">
+              PythonPrgramming, Web Development, Machine Learning, Data Science,
+              Artifical Intelligent, Java, My SQL, Java Script, Full Stack
+              Developer, React, NODE.JS, Back-End Course.
+            </marquee>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <input
+          class="textarea"
+          type="text"
+          placeholder="Your Name"
+          required
+        /><br />
+        <input
+          class="textarea"
+          type="email"
+          placeholder="Your Email"
+          required
+        /><br />
+        <input
+          class="textarea"
+          type="text"
+          required
+          placeholder="Subject"
+        /><br />
+        <textarea
+          class="textarea1"
+          required
+          placeholder="Your Message"
+        ></textarea
+        ><br />
+        <button class="btn2" type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <script src="../jsFiles/course.js"></script>
+
+    <footer class="footer" id="foot">
+      © 2026 All Rights Reserved
+      <a
+        class="fa"
+        href="privacy.html"
+        target="_blank"
+        style="text-decoration: none; color: white"
+      >
+        | privacy policy</a
+      >
+      <p>Email : urcare@gmail.com</p>
+      <p>Anakapalli-531033</p>
+      <p>Visakhapatnam</p>
+      <p>Andhra Pradesh , India</p>
+      <div class="nw">
+        <a href="www.linkedin" alt="LinkedIn" target="_blank"
+          ><img src="./images/linkedin.png"
+        /></a>
+        <a href="www.naukri" alt="Naukri" target="_blank"
+          ><img src="./images/naukri.jpg"
+        /></a>
+        <a href="www.github" alt="GitHub" target="_blank"
+          ><img src="./images/github.png"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>

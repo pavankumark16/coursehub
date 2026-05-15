@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Course Player</title>
+  <style>
+    body {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+    iframe {
+      width: 100%;
+      height: 480px;
+      border-radius: 12px;
+      margin-top: 5px;
+    }
+    a {
+      color: #eaf918;
+      
+      margin-top: 20px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="courseTitle">Course Video</h1>
+  <iframe id="videoFrame" allowfullscreen></iframe>
+  <br>
+  <a href="index.html">⬅ Back to Courses</a>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const course = params.get("course");
+
+    const videos = {
+      python: "https://www.youtube.com/embed/_uQrJ0TkZlc",
+      web: "https://www.youtube.com/embed/UB1O30fR-EE",
+      ml: "https://www.youtube.com/embed/Gv9_4yMHFhI",
+      ds: "https://www.youtube.com/embed/ua-CiDNNj30",
+      ai: "https://www.youtube.com/embed/JMUxmLyrhSk",
+      java: "https://www.youtube.com/embed/grEKMHGYyns",
+      mysql: "https://www.youtube.com/embed/7S_tz1z_5bA",
+      js: "https://www.youtube.com/embed/PkZNo7MFNFg",
+      fullstack: "https://www.youtube.com/embed/nu_pCVPKzTk",
+      react: "https://www.youtube.com/embed/bMknfKXIFA8",
+      node: "https://www.youtube.com/embed/TlB_eWDSMt4",
+      backend: "https://www.youtube.com/embed/Oe421EPjeBE"
+    };
+
+    if (course && videos[course]) {
+      document.getElementById("videoFrame").src = videos[course];
+      document.getElementById("courseTitle").innerText =
+        course.toUpperCase() + " Course";
+    } else {
+      document.body.innerHTML = "<h2>Video not found</h2>";
+    }
+  </script>
+
+</body>
+</html>

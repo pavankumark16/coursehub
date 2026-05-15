@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../cssFiles/style.css">
+</head>
+<body>
+
+<header>
+    ADMIN DASHBOARD
+    <h6>Authorized Access Only</h6>
+</header>
+
+<div class="signupmain">
+
+    <!-- ADMIN LOGIN -->
+    <div class="main1">
+        <h2>ADMIN LOGIN</h2>
+        <form class="signform" id="adminLoginForm">
+            <label>USERNAME:
+                <input class="textarea" type="text" id="admin_username" required>
+            </label>
+
+            <label>PASSWORD:
+                <input class="textarea" type="password" id="admin_password" required>
+            </label>
+
+            <button class="btn" type="submit">LOGIN</button>
+            <h6 id="adminMsg"></h6>
+        </form>
+    </div>
+
+    <!-- ADMIN DATA -->
+    <div class="main2" id="adminPanel" style="display:none;">
+        <h2>REGISTERED USERS</h2>
+        <p id="totalUsers"></p>
+
+        <table border="1" cellpadding="45px" style="color:rgb(251, 235, 19);">
+            <thead>
+                <tr>
+                    <th>NoOfUsers</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <!-- <th>Password</th> -->
+                </tr>
+            </thead>
+            <tbody id="userTable"></tbody>
+        </table>
+    </div>
+
+</div>
+
+<script src="../jsFiles/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portal signup&login</title>
+    <link rel="stylesheet" href="../cssFiles/style.css">
+</head> 
+<body>
+    <div class="mc">
+    <header>
+        WELCOME TO THE PAGE
+        <h6>CONNECT TO PORTAL</h6>
+    </header>
+
+<div class="signupmain">
+ <div class="main1">   
+    <h2>SIGNUP</h2>
+    <form class="signform" id="signupFrom">
+        <label>USERNAME 🙎: 
+        <input class="textarea" type="text" placeholder="URNAME"
+        id="su_username" maxlength="30" required></label>
+        <br>
+        <label>EMAIL 📩: 
+        <input class="textarea" type="email" placeholder="ursemail@gmail.com" required id="su_email"></label>
+        <br>
+        <label>PASSWORD 🔐: 
+        <input class="textarea" type="password" placeholder="PASSWORD" required id="su_password" maxlength="8"></label>
+        <label>CONFIRM PASSWORD 🔐: 
+        <input class="textarea" type="password" placeholder="PASSWORD" required id="su_confirm_password" maxlength="8"></label>
+        <button class="btn" type="submit">CREATE</button>
+        <button class="btn" type="reset">CLEAR</button>
+        <p> Create an account here <br>Already have account | <strong>please <a href="#loginpg"> Login</a></strong></p>
+        <h6 id="signupMsg" style="margin-top:10px; font-weight:bold;"></h6>
+    </form>
+    </div>
+<div class="main2">
+      <h2 id="loginpg">LOGIN</h2>
+    <form class="signform" id="loginForm">
+        <label>USERNAME 👤: <input class="textarea" type="text" maxlength="30" placeholder="URNAME" required id="li_username"></label>
+        <br>
+        <label>PASSWORD 🔓: <input class="textarea" type="password" placeholder="PASSWORD" required maxlength="8"
+        id="li_password"></label>
+        <button class="btn" type="submit">LOGIN</a></button>
+        <button class="btn" type="reset">CLEAR</button>
+    </form>
+  </div>  
+</div>
+    </div>
+    
+<script src="../jsFiles/auth.js"></script>
+</body>
+</html>
